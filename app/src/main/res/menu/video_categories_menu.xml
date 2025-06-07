@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_letters"
+            android:icon="@drawable/ic_letters"
+            android:title="🎓 الحروف" />
+
+        <item
+            android:id="@+id/menu_numbers"
+            android:icon="@drawable/ic_numbers"
+            android:title="🔢 الأرقام" />
+
+        <item
+            android:id="@+id/menu_songs"
+            android:icon="@drawable/ic_songs"
+            android:title="🎶 الأناشيد" />
+
+        <item
+            android:id="@+id/menu_stories"
+            android:icon="@drawable/ic_stories"
+            android:title="📖 القصص" />
+
+        <item
+            android:id="@+id/menu_education"
+            android:icon="@drawable/ic_education"
+            android:title="🧠 التربية" />
+
+        <item
+            android:id="@+id/menu_animation"
+            android:icon="@drawable/ic_animation"
+            android:title="🎬 رسوم متحركة" />
+
+        <item
+            android:id="@+id/menu_drawing"
+            android:icon="@drawable/ic_drawing"
+            android:title="🎨 الرسم" />
+
+    </group>
+</menu>

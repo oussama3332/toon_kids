@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_kids">
+
+    <!-- شريط الأدوات العلوي -->
+    <LinearLayout
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp">
+
+        <!-- زر الرجوع -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="رجوع"
+            app:tint="@color/white" />
+
+        <!-- زر عرض الصورة الأصلية -->
+        <ImageButton
+            android:id="@+id/btnOriginalImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_image"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="عرض الصورة الأصلية"
+            app:tint="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_undo"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="تراجع"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_redo"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="إعادة"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- لوحة الألوان الجانبية -->
+    <ScrollView
+        android:id="@+id/colorPaletteScroller"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/topToolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@id/btnEraser">
+
+        <LinearLayout
+            android:id="@+id/colorPalette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_corner"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+
+            <View
+                android:id="@+id/colorRed"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#F44336"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون أحمر" />
+
+            <View
+                android:id="@+id/colorOrange"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FF9800"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون برتقالي" />
+
+            <View
+                android:id="@+id/colorYellow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFEB3B"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون أصفر" />
+
+            <View
+                android:id="@+id/colorGreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون أخضر" />
+
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#2196F3"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون أزرق" />
+
+            <View
+                android:id="@+id/colorPurple"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#9C27B0"
+                android:background="@drawable/color_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="لون بنفسجي" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- زر الممحاة -->
+    <ImageButton
+        android:id="@+id/btnEraser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_eraser"
+        android:background="@drawable/bg_circle_accent"
+        android:contentDescription="ممحاة"
+        android:elevation="8dp" />
+
+    <!-- منطقة الرسم -->
+    <FrameLayout
+        android:id="@+id/drawingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        android:layout_above="@id/bottomPanel"
+        android:layout_toLeftOf="@+id/colorPaletteScroller"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_drawing_paper_kids"
+        android:padding="10dp">
+
+        <!-- صورة الخلفية الأصلية -->
+        <ImageView
+            android:id="@+id/imageOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <!-- أداة الرسم -->
+        <com.example.kidsapp.DrawingView
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- شريط الأدوات السفلي -->
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnScreenshot"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_camera"
+            android:background="@drawable/bg_circle_primary"
+            android:contentDescription="لقطة شاشة"
+            android:elevation="4dp" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_save"
+            android:background="@drawable/bg_circle_primary"
+            android:contentDescription="حفظ الرسمة"
+            android:elevation="4dp" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_share"
+            android:background="@drawable/bg_circle_primary"
+            android:contentDescription="مشاركة الرسمة"
+            android:elevation="4dp" />
+
+        <ImageButton
+            android:id="@+id/btnShowResult"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_check"
+            android:background="@drawable/bg_circle_accent"
+            android:contentDescription="عرض النتيجة"
+            android:elevation="4dp" />
+    </LinearLayout>
+</RelativeLayout>

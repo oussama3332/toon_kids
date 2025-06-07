@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main App Strings -->
+    <string name="app_name">تطبيق الأطفال</string>
+    <string name="about">حول</string>
+    <string name="account">الحساب</string>
+    <string name="app_language">لغة التطبيق</string>
+    <string name="casting">البث</string>
+    <string name="clear_history">مسح السجل</string>
+    <string name="content_controls">التحكم في المحتوى</string>
+    <string name="content_settings_description">اختر المحتوى المناسب لطفلك.</string>
+    <string name="create_passcode">إنشاء رمز مرور</string>
+    <string name="delete_passcode">حذف رمز المرور</string>
+    <string name="older">أكبر سناً</string>
+    <string name="younger">أصغر سناً</string>
+    <string name="parent_verification">التحقق من ولي الأمر</string>
+    <string name="parental_guide">دليل الوالدين</string>
+    <string name="pause_search_history">إيقاف سجل البحث</string>
+    <string name="pause_watch_history">إيقاف سجل المشاهدة</string>
+    <string name="privacy">الخصوصية</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="search">بحث</string>
+    <string name="search_toggle_description">تشغيل/إيقاف البحث</string>
+    <string name="send_feedback">إرسال ملاحظات</string>
+    <string name="set_timer">ضبط المؤقت</string>
+    <string name="sign_in_description">سجل الدخول للوصول إلى إعدادات الحساب</string>
+    <string name="subtitles_settings">إعدادات الترجمة</string>
+    <string name="terms_of_service">شروط الاستخدام</string>
+    <string name="video">فيديو</string>
+
+    <!-- Timer Strings -->
+    <string name="timer_disabled" tools:ignore="ExtraTranslation">غير مفعل</string>
+    <string name="timer_10_min" tools:ignore="ExtraTranslation">10 دقائق</string>
+    <string name="timer_20_min" tools:ignore="ExtraTranslation">20 دقيقة</string>
+    <string name="timer_30_min" tools:ignore="ExtraTranslation">30 دقيقة</string>
+    <string name="timer_1_hour" tools:ignore="ExtraTranslation">ساعة واحدة</string>
+    <string name="timer_saved_message" tools:ignore="ExtraTranslation">تم حفظ وقت المشاهدة: %d دقيقة ✅</string>
+    <string name="time_up_title" tools:ignore="ExtraTranslation">انتهى وقت المشاهدة!</string>
+    <string name="time_up_message" tools:ignore="ExtraTranslation">لقد وصلت إلى الحد اليومي لمشاهدة الفيديوهات</string>
+    <string name="time_up_button" tools:ignore="ExtraTranslation">حسناً</string>
+    <string name="weekly_report_title" tools:ignore="ExtraTranslation">التقرير الأسبوعي</string>
+    <string name="blocked_video_title" tools:ignore="ExtraTranslation">فيديو محظور</string>
+    <string name="blocked_video_message" tools:ignore="ExtraTranslation">هذا الفيديو محظور من قبل الوالدين</string>
+
+    <!-- Drawing Activity Strings -->
+    <string name="drawing_back">رجوع</string>
+    <string name="drawing_activity_title">نشاط الرسم</string>
+    <string name="drawing_save">حفظ الرسم</string>
+    <string name="drawing_undo">تراجع</string>
+    <string name="drawing_brush">فرشاة</string>
+    <string name="drawing_eraser">ممحاة</string>
+    <string name="drawing_stamps">طوابع</string>
+    <string name="drawing_clear_all">مسح الكل</string>
+
+    <!-- تلميحات -->
+    <string name="hint_full_name">اسم الطفل الكامل</string>
+    <string name="hint_guardian_phone">مثلاً: 0600000000</string>
+    <string name="hint_guardian_email">مثلاً: parent@example.com</string>
+
+    <!-- النصوص -->
+    <string name="title_child_info">المعلومات الخاصة بالطفل</string>
+    <string name="title_guardian_info">المعلومات الخاصة بالوصي</string>
+    <string name="label_age">الفئة العمرية</string>
+    <string name="label_gender">الجنس</string>
+    <string name="label_guardian_relation">صلة القرابة</string>
+    <string name="button_next">التالي</string>
+    <string name="error_fill_fields">املأ جميع الحقول المطلوبة</string>
+    <string name="error_saving_data">حدث خطأ أثناء حفظ البيانات</string>
+
+    <!-- الجنس -->
+    <string name="gender_male">ذكر</string>
+    <string name="gender_female">أنثى</string>
+
+    <!-- General Strings -->
+    <string name="auth_login">تسجيل الدخول</string>
+    <string name="auth_signup">إنشاء حساب</string>
+    <string name="welcome">مرحباً</string>
+    <string name="next">التالي</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>العربية</item>
+    </string-array>
+
+</resources>

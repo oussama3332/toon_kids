@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- ثيم التطبيق الرئيسي -->
+    <style name="Theme.Kidsapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- اللون الأساسي -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!-- اللون الثانوي -->
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <!-- لون النص على اللون الأساسي -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- لون النص على الخلفية -->
+        <item name="colorOnBackground">@color/black</item>
+        <!-- لون ثانوي -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- لون النص على اللون الثانوي -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- التحكم في ستايل الأزرار، الأدوات، القوائم... -->
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.FilledBox</item>
+    </style>
+
+</resources>

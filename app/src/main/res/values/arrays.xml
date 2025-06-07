@@ -1,0 +1,17 @@
+<resources>
+    <!-- Spinner: Age ranges -->
+    <string-array name="age_ranges">
+        <item>3-5 years</item>
+        <item>6-8 years</item>
+        <item>9-12 years</item>
+    </string-array>
+
+    <!-- Spinner: Guardian relations -->
+    <string-array name="guardian_relations">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Other</item>
+    </string-array>
+</resources>

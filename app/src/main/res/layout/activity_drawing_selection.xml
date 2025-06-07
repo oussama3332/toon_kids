@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawingSelectionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_yellow"
+    tools:context=".DrawingSelectionActivity">
+
+    <!-- العنوان -->
+    <TextView
+        android:id="@+id/selectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اختر صورة للتلوين"
+        android:textSize="26sp"
+        android:textColor="@color/soft_brown"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/soft_orange"
+        android:textStyle="bold" />
+
+    <!-- شبكة الصور -->
+    <GridView
+        android:id="@+id/drawingGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectionTitle"
+        android:layout_marginTop="2dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:horizontalSpacing="12dp"
+        android:numColumns="3"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="12dp" />
+</RelativeLayout>

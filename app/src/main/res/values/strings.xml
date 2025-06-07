@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main App Strings -->
+    <string name="app_name">KidsApp</string>
+    <string name="about">About</string>
+    <string name="account">Account</string>
+    <string name="app_language">App Language</string>
+    <string name="casting">Casting</string>
+    <string name="clear_history">Clear History</string>
+    <string name="content_controls">Content Controls</string>
+    <string name="content_settings_description">Choose appropriate content for your child.</string>
+    <string name="create_passcode">Create Passcode</string>
+    <string name="delete_passcode">Delete Passcode</string>
+    <string name="older">Older</string>
+    <string name="younger">Younger</string>
+    <string name="parent_verification">Parent Verification</string>
+    <string name="parental_guide">Parental Guide</string>
+    <string name="pause_search_history">Pause Search History</string>
+    <string name="pause_watch_history">Pause Watch History</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="search">Search</string>
+    <string name="search_toggle_description">Search toggle description</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="sign_in_description">Sign in to access account settings</string>
+    <string name="subtitles_settings">Subtitles Settings</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="video">Video</string>
+    <string name="timer_disabled">Disabled</string>
+    <string name="timer_10_min">10 minutes</string>
+    <string name="timer_20_min">20 minutes</string>
+    <string name="timer_30_min">30 minutes</string>
+    <string name="timer_1_hour">1 hour</string>
+    <string name="timer_saved_message">Viewing time saved: %d minutes ✅</string>
+    <string name="time_up_title">Viewing time is up!</string>
+    <string name="time_up_message">"You've reached your daily video viewing limit"</string>
+    <string name="time_up_button">OK</string>
+    <string name="weekly_report_title">Weekly Report</string>
+    <string name="blocked_video_title">Blocked Video</string>
+    <string name="blocked_video_message">This video is blocked by parental controls</string>
+
+    <!-- Drawing Activity Strings -->
+    <string name="drawing_back">Back</string>
+    <string name="drawing_activity_title">Drawing Activity</string>
+    <string name="drawing_save">Save Drawing</string>
+    <string name="drawing_undo">Undo</string>
+    <string name="drawing_brush">Brush</string>
+    <string name="drawing_eraser">Eraser</string>
+    <string name="drawing_stamps">Stamps</string>
+    <string name="drawing_clear_all">Clear All</string>
+    <string name="parental_lock_icon" tools:ignore="MissingTranslation">Parental Lock Icon</string>
+
+    <!-- Hints -->
+    <string name="hint_full_name">Full name of the child</string>
+    <string name="hint_guardian_phone">e.g. 0600000000</string>
+    <string name="hint_guardian_email">e.g. parent@example.com</string>
+
+    <!-- Section Titles -->
+    <string name="title_child_info">Child\'s Information</string>
+    <string name="title_guardian_info">Guardian\'s Information</string>
+
+    <!-- Labels -->
+    <string name="label_age">Age Range</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_guardian_relation">Guardian Relation</string>
+
+    <!-- Buttons -->
+    <string name="button_next">Next</string>
+
+    <!-- Error Messages -->
+    <string name="error_fill_fields">Please fill in all required fields</string>
+    <string name="error_saving_data">An error occurred while saving data</string>
+
+    <!-- Gender -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <!-- General Strings -->
+    <string name="auth_login">Login</string>
+    <string name="auth_signup">Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="next">Next</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>العربية</item>
+    </string-array>
+
+</resources>

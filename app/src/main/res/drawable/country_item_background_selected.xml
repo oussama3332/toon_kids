@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Light green background when selected -->
+    <solid android:color="#E8F5E9" />
+
+    <!-- Same rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Thicker green border -->
+    <stroke android:width="2dp" android:color="#4CAF50" />
+
+    <!-- Same padding -->
+    <padding android:left="8dp" android:top="8dp"
+        android:right="8dp" android:bottom="8dp" />
+</shape>

@@ -1,0 +1,17 @@
+<resources>
+    <!-- Spinner: الأعمار -->
+    <string-array name="age_ranges">
+        <item>3-5 سنوات</item>
+        <item>6-8 سنوات</item>
+        <item>9-12 سنوات</item>
+    </string-array>
+
+    <!-- Spinner: صلة القرابة -->
+    <string-array name="guardian_relations">
+        <item>أب</item>
+        <item>أم</item>
+        <item>أخ</item>
+        <item>أخت</item>
+        <item>غير ذلك</item>
+    </string-array>
+</resources>
